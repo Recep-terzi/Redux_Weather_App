@@ -40,6 +40,8 @@ const Weather = () => {
                         dat.weather[0].description === "parçalı az bulutlu"
                           ? cloud
                           : dat.weather[0].description === "hafif yağmur" ||
+                            dat.weather[0].description ===
+                              "orta şiddetli yağmur" ||
                             dat.weather[0].description === "yağmur" ||
                             dat.weather[0].description === "sağanak yağmur"
                           ? rain

@@ -2,12 +2,11 @@ import React, { useState, useEffect } from "react";
 import "./Main.Module.css";
 import sun from "../../assets/sun.png";
 import cloud from "../../assets/cloud.png";
-import deneme from "../../assets/deneme.gif";
 import { useSelector, useDispatch } from "react-redux";
 import axios from "axios";
 import { getSelectCity, getWeatherData } from "../../redux/weatherSlice";
 import Weather from "../Weather/Weather";
-
+import rain from "../../assets/rain.png";
 const Main = () => {
   const dispatch = useDispatch();
   const cities = useSelector((state) => state.weather.allCities);
@@ -38,6 +37,12 @@ const Main = () => {
                     data.weather[0].description === "az bulutlu" ||
                     data.weather[0].description === "parçalı az bulutlu"
                       ? cloud
+                      : data.weather[0].description === "hafif yağmur" ||
+                        data.weather[0].description === "yağmur" ||
+                        data.weather[0].description ===
+                          "orta şiddetli yağmur" ||
+                        data.weather[0].description === "sağanak yağmur"
+                      ? rain
                       : sun
                   }
                   alt="sun"

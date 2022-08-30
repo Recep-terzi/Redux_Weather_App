@@ -8,3 +8,5 @@
 
 ## Netfliy APP
 ### https://pysonweatherapp.netlify.app
+
+![](https://i.hizliresim.com/t2ttiy5.PNG)

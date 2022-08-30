@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../assets/25501.jpg");
+  background-size: 100%;
+  font-family: "Raleway", sans-serif;
+  background-repeat: no-repeat;
+}
+.header-text {
+  font-size: 40px;
+  text-align: center;
+  color: #fff;
+  padding: 80px;
+}
+.img-div {
+  display: flex;
+}
+.weather-img {
+  width: 100px;
+  height: 100px;
+}
+.img-div-text {
+  color: white;
+  display: flex;
+  align-items: center;
+}
+.img-div-text p {
+  margin-left: 30px;
+  font-size: 25px;
+}
+.img-div-text p:last-child {
+  position: absolute;
+  margin-top: 60px;
+}
+.last-line-div {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+}

@@ -1,0 +1,42 @@
+.cards {
+  border: 1px solid #000;
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  width: 150px;
+  text-align: center;
+  color: #fff;
+  height: 230px;
+}
+.cards-text {
+  padding: 10px;
+}
+.card-weather,
+.card-weather-heat,
+.card-weather-date,
+.card-weather-clock {
+  margin-bottom: 10px;
+}
+.card-weather-img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.first-line-right-div div {
+  font-size: 25px;
+  color: #fff;
+}
+.first-line-right-div select {
+  background: #4d99e7;
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+}
+.cards:hover {
+  -webkit-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  transition: 0.5s;
+}

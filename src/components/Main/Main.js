@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import "./Main.Module.css";
 import sun from "../../assets/sun.png";
 import cloud from "../../assets/cloud.png";
@@ -12,6 +12,16 @@ const Main = () => {
   const cities = useSelector((state) => state.weather.allCities);
   const selectCities = useSelector((state) => state.weather.selectCity);
   const data = useSelector((state) => state.weather.weatherData);
+  const dateRef = useRef();
+  function tarihSaat() {
+    var date = new Date().toLocaleString("tr-TR");
+    dateRef.current.innerHTML = date;
+  }
+  setInterval(tarihSaat, 500);
+
+  setInterval(() => {
+    Date();
+  }, 1000);
   useEffect(() => {
     axios(
       `https://api.openweathermap.org/data/2.5/weather?q=${
@@ -54,7 +64,7 @@ const Main = () => {
                   <>
                     <p>{data.weather[0].description}</p>
                     <p>{data.main.temp} *C</p>
-                    <p>{Date()}</p>
+                    <p ref={dateRef}></p>
                   </>
                 )}
                 {!data && <p>Error</p>}

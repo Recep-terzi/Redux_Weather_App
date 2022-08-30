@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useEffect, useRef } from "react";
 import "./Main.Module.css";
 import sun from "../../assets/sun.png";
 import cloud from "../../assets/cloud.png";
